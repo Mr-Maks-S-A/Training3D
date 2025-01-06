@@ -1,3 +1,3 @@
 ## TODO
-- [] Generating metadata for code and readme file
-- [] Create 3DSimple console shuter
+- [ ] Generating metadata for code and readme file
+- [ ] Create 3DSimple console shuter
