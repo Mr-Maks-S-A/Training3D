@@ -1,0 +1,39 @@
+#ifndef _CONFIG_GPP_
+#define _CONFIG_GPP_
+
+// typedef struct  {
+//   SDL_Window *window;
+//   SDL_Renderer *renderer;
+//   Uint64 last_step;
+// }AppState;
+
+
+
+// static const struct {
+//   const char* m_key;
+//   const char* m_value;
+// } extended_metadata[] = {{SDL_PROP_APP_METADATA_NAME_STRING, "Simple Example Realtime Raycat Renderer "},
+//                          {SDL_PROP_APP_METADATA_VERSION_STRING, "0.1"},
+//                          {SDL_PROP_APP_METADATA_IDENTIFIER_STRING, "SIMPLE_2D_RENDERER"},
+//                          {SDL_PROP_APP_METADATA_CREATOR_STRING, "Jarco (ak Mr-Maks-S-A)"},
+//                          {SDL_PROP_APP_METADATA_COPYRIGHT_STRING, "None"},
+//                          {SDL_PROP_APP_METADATA_URL_STRING, "None"},
+//                          {SDL_PROP_APP_METADATA_TYPE_STRING, "None"}};
+
+
+// #define PLATFORM_ID "@PLATFORM_ID@"
+
+// #define PROGECT_LANG_CPP_STANDART (@PROGECT_LANG_CPP_STANDART@)
+// #define CXX_COMPILER_ID "@CXX_COMPILER_ID@"
+// #define CXX_COMPILER_VERSION (@CXX_COMPILER_VERSION@)
+
+// #define PROGECT_LANG_C_STANDART (@PROGECT_LANG_C_STANDART@)
+// #define C_COMPILER_ID "@C_COMPILER_ID@"
+// #define C_COMPILER_VERSION (@C_COMPILER_VERSION@)
+
+// #define PROGECT_VERSION_MAJOR (@PROGECT_VERSION_MAJOR@)
+// #define PROGECT_VERSION_MINOR (@PROGECT_VERSION_MINOR@)
+// #define PROGECT_VERSION_PATCH (@PROGECT_VERSION_PATCH@)
+// #define PROGECT_VERSION "@PROGECT_VERSION@"
+
+#endif //_CONFIG_GPP_

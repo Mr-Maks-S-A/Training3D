@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.30 FATAL_ERROR)
+
+
+add_library(External_LIbrary INTERFACE)                                            #Adding an interface to make it easier to connect external libraries to a project
+
+#=================================STB=================================
+# add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/stb")  
+# target_link_libraries(External_LIbrary INTERFACE STB)
+#=================================STB=================================
