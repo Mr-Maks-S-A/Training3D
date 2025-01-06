@@ -1,9 +1,21 @@
 cmake_minimum_required(VERSION 3.30 FATAL_ERROR)
 
+set(NAME_INTARFACE_LIBRARY External_LIbrary)
+add_library(${NAME_INTARFACE_LIBRARY} INTERFACE)                                            #Adding an interface to make it easier to connect external libraries to a project
 
-add_library(External_LIbrary INTERFACE)                                            #Adding an interface to make it easier to connect external libraries to a project
+#=================================SDL3=================================
+set(SDL_STATIC ON CACHE BOOL "Build a glm static library (if available)")
+set(SDL_SHARED OFF CACHE BOOL "Build a glm shared library (if available)")
 
-#=================================STB=================================
-# add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/stb")  
-# target_link_libraries(External_LIbrary INTERFACE STB)
-#=================================STB=================================
+set(SDL_TEST_LIBRARY OFF)
+set(SDL_TESTS OFF)
+set(SDL_INSTALL_TEST OFF)
+
+set(SDL_DISABLE_INSTALL OFF)
+set(SDL_DISABLE_INSTALL_DOCS OFF)
+
+set(SDL_EXAMPLES OFF CACHE BOOL "Build the examples directory")
+
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/SDL" EXCLUDE_FROM_ALL)
+target_link_libraries(${NAME_INTARFACE_LIBRARY}  INTERFACE SDL3::SDL3)
+#=================================SDL3=================================
