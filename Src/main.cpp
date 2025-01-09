@@ -1,6 +1,7 @@
 #define SDL_MAIN_USE_CALLBACKS /* use the callbacks instead of main() */
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
+// #include <SDL3_image/SDL_image.h>
 
 #include <config.hpp>
 #include <iostream>
@@ -70,7 +71,7 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[]) {
     return SDL_APP_FAILURE;
   }
 
-  if (!SDL_CreateWindowAndRenderer(std::string(extended_metadata[2].m_value).c_str(), SDL_WINDOW_WIDTH,
+  if (!SDL_CreateWindowAndRenderer(std::string(extended_metadata[0].m_value).c_str(), SDL_WINDOW_WIDTH,
                                    SDL_WINDOW_HEIGHT, 0, &as->window, &as->renderer)) {
     return SDL_APP_FAILURE;
   }

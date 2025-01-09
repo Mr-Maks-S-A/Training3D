@@ -19,3 +19,9 @@ set(SDL_EXAMPLES OFF CACHE BOOL "Build the examples directory")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/SDL" EXCLUDE_FROM_ALL)
 target_link_libraries(${NAME_INTARFACE_LIBRARY}  INTERFACE SDL3::SDL3)
 #=================================SDL3=================================
+
+#=================================SDL3=================================
+set(BUILD_SHARED_LIBS OFF)
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/SDL_image" EXCLUDE_FROM_ALL)
+target_link_libraries(${NAME_INTARFACE_LIBRARY}  INTERFACE SDL3_image::SDL3_image)
+#=================================SDL3=================================
